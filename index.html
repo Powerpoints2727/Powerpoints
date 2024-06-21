@@ -223,6 +223,8 @@
                 previewUrl = `https://drive.google.com/viewerng/viewer?embedded=true&url=${encodedUrl}`;
             } else if (url.endsWith('.doc') || url.endsWith('.docx')) {
                 previewUrl = `https://view.officeapps.live.com/op/embed.aspx?src=${encodedUrl}`;
+            } else if (url.endsWith('.ppt') || url.endsWith('.pptx')) {
+                previewUrl = `https://view.officeapps.live.com/op/embed.aspx?src=${encodedUrl}`;
             } else {
                 alert('File type not supported for preview.');
                 return;
